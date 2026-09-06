@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Cinematic Masked Logo Intro Experience: دار القاضي
+   ========================================================================== */
+
+#cinematic-intro {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9000;
+  background-color: var(--bg-darkest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: all;
+  transition: opacity 1.2s var(--ease-luxury);
+}
+
+#cinematic-intro.intro-complete {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Background darkness of intro */
+.intro-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, #052417 0%, #010c07 85%);
+  z-index: 1;
+}
+
+/* Video portal / aperture that expands */
+.intro-video-portal {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  overflow: hidden;
+  z-index: 3;
+  transform: scale(0.9);
+  opacity: 0;
+  -webkit-mask-image: url('/brand/medallion-silhouette.png');
+  mask-image: url('/brand/medallion-silhouette.png');
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  box-shadow: 0 0 80px rgba(212, 175, 55, 0.45);
+  transition: box-shadow 0.8s ease;
+  will-change: transform, width, height, opacity;
+}
+
+/* Video inside portal */
+.intro-video-portal video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* Hollow logo overlay directly over portal */
+.intro-logo-seal {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  z-index: 4;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.95);
+  opacity: 0;
+  filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.35));
+  will-change: transform, opacity, filter;
+}
+
+.intro-logo-seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Subtle glowing aura behind logo */
+.intro-gold-aura {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, rgba(214, 125, 145, 0.1) 45%, transparent 70%);
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0.8);
+  filter: blur(20px);
+}
+
+/* Atmospheric subtitle during reveal */
+.intro-narrative {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  width: 90%;
+  max-width: 600px;
+}
+
+.intro-narrative-badge {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--gold-light);
+  letter-spacing: 0.15em;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.intro-narrative-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* Skip Button */
+.intro-skip-btn {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  z-index: 15;
+  background: rgba(4, 25, 15, 0.6);
+  border: 1px solid var(--gold-border);
+  color: var(--gold-light);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-fast);
+  opacity: 0;
+}
+
+.intro-skip-btn:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold-primary);
+  color: #ffffff;
+}
+
+.intro-skip-btn .skip-progress-ring {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+}

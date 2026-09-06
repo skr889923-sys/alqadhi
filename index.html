@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دار القاضي | ورد الطائف الملكي والأدهان الفاخرة</title>
+  <meta name="description" content="المتجر الرسمي لدار القاضي لورد الطائف - أفخم أدهان الورد الطائفي النقي، ماء الورد العروس، والعطور الملكية وصناديق الإهداء الفاخرة من قمم جبال الهدا والشفا." />
+  
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="دار القاضي | عبق الطائف في كل قطرة" />
+  <meta property="og:description" content="أندر أدهان وعطور الورد الطائفي النقي المقطر يدوياً في قدور النحاس العتيقة على ارتفاع ألفي متر." />
+  <meta property="og:image" content="/products/sultan-perfume.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Amiri (Serif Heritage) + Alexandria (Modern Luxury Sans) + Cinzel (Serif Numbers) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+  <link rel="stylesheet" href="/src/styles/intro.css" />
+  <link rel="stylesheet" href="/src/styles/hero.css" />
+  <link rel="stylesheet" href="/src/styles/products.css" />
+  <link rel="stylesheet" href="/src/styles/heritage.css" />
+  <link rel="stylesheet" href="/src/styles/interactive.css" />
+  <link rel="stylesheet" href="/src/styles/cart.css" />
+  <link rel="stylesheet" href="/src/styles/footer.css" />
+</head>
+<body>
+
+  <!-- Ambient Rose Petals Canvas & Grain Texture -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="grain-overlay"></div>
+
+  <!-- ========================================================================
+       1. CINEMATIC MASKED LOGO INTRO EXPERIENCE
+       ======================================================================== -->
+  <div id="cinematic-intro">
+    <div class="intro-backdrop"></div>
+    <div class="intro-gold-aura"></div>
+
+    <!-- Video Portal: Video shows inside the hollow emblem then expands to full screen -->
+    <div class="intro-video-portal">
+      <video id="intro-portal-video" autoplay muted loop playsinline poster="/heritage/hero-dewy-roses.jpg">
+        <source src="/videos/taif-rose-hero.mp4" type="video/mp4" />
+        <source src="/videos/0905.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- The exact uploaded logo brand mark, acting as the hollow glowing silhouette -->
+    <div class="intro-logo-seal">
+      <img src="/brand/logo-gold.png" alt="شعار دار القاضي لورد الطائف" />
+    </div>
+
+    <!-- Narrative caption -->
+    <div class="intro-narrative">
+      <div class="intro-narrative-badge">دار القـاضـي لـورد الطائـف</div>
+      <div class="intro-narrative-sub">عَبـقُ الملـوكِ والأصـالةِ منـذُ عُقـود • مـن قِمـمِ الهـدا والشَفـا</div>
+    </div>
+
+    <!-- Skip Intro Button -->
+    <button class="intro-skip-btn" id="skip-intro-btn">
+      <span>تخطي المشهد</span>
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+
+  <!-- ========================================================================
+       2. ROYAL NAVIGATION HEADER
+       ======================================================================== -->
+  <header id="royal-header">
+    <div class="header-container">
+      <!-- Master Brand Mark Docks Here -->
+      <a href="#" class="header-brand">
+        <div class="brand-logo-dock">
+          <img src="/brand/logo-gold.png" alt="شعار القاضي" />
+        </div>
+        <div class="brand-title-group">
+          <span class="brand-name">دار القاضـي</span>
+          <span class="brand-subtitle">TAIF ROSE • EST. TAIF</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="header-nav">
+        <a href="#hero" class="nav-link active">الرئيسية</a>
+        <a href="#products" class="nav-link">المقتنيات الملكية</a>
+        <a href="#heritage" class="nav-link">حكاية الورد</a>
+        <a href="#distillation" class="nav-link">التقطير النحاسي</a>
+        <a href="#olfactory" class="nav-link">الهرم العطري</a>
+        <a href="#gift-customizer" class="nav-link">الإهداء الملكي</a>
+        <a href="#concierge" class="nav-link">مستشار العطور</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Botanical Ambiance Sound Toggle -->
+        <button class="btn-icon btn-sound-toggle" title="تشغيل نسيم بساتين الطائف">
+          <i data-lucide="volume-x" style="width:20px;height:20px;"></i>
+        </button>
+
+        <!-- Replay Cinematic Intro -->
+        <button class="btn-icon btn-replay-intro" title="إعادة المشهد السنيمائي">
+          <i data-lucide="sparkles" style="width:20px;height:20px;"></i>
+        </button>
+
+        <!-- Shopping Bag Trigger -->
+        <div class="bag-btn-wrapper">
+          <button class="btn-icon btn-open-cart" title="حقيبة المقتنيات">
+            <i data-lucide="shopping-bag" style="width:20px;height:20px;"></i>
+          </button>
+          <span class="bag-badge">1</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         3. HERO SECTION WITH CINEMATIC VIDEO BACKGROUND
+         ====================================================================== -->
+    <section id="hero">
+      <!-- Looping Taif Rose Video -->
+      <div class="hero-video-wrap">
+        <video id="hero-video" autoplay muted loop playsinline poster="/heritage/hero-dewy-roses.jpg">
+          <source src="/videos/taif-rose-hero.mp4" type="video/mp4" />
+          <source src="/videos/0905.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-radial-glow"></div>
+
+      <div class="container hero-content">
+        <h1 class="sr-only">دار القاضي لورد الطائف الفاخر - عبق الطائف الملكي</h1>
+        
+        <!-- Central Cutout Logo / اللوقو المفرغ في المنتصف -->
+        <div class="hero-center-seal hero-animate-in">
+          <div class="hero-seal-glow"></div>
+          <img 
+            src="/brand/logo-cutout.png" 
+            alt="شعار دار القاضي لورد الطائف" 
+            class="hero-cutout-logo"
+          />
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#products" class="hero-scroll-indicator">
+        <span>اكتشف الروائع</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- ======================================================================
+         4. FEATURED SIGNATURE PRODUCTS SECTION
+         ====================================================================== -->
+    <section id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">المقتنيات الأيقونية</div>
+          <h2 class="section-title">روائعُ الورد الطائفي الملكي</h2>
+          <p class="section-description">
+            إصدارات فاخرة صُنعت بعناية فائقة لتليق بذائقة عشاق العطور النادرة، من دهن الورد الصافي إلى ماء العروس المركز والعطور الخالدة.
+          </p>
+        </div>
+
+        <!-- Search & Discovery Bar -->
+        <div class="product-search-wrapper">
+          <div class="search-box-inner">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="product-search-input" placeholder="ابحث في مقتنيات ديوان الورد (ورد طائفي، عود، دهن، بخور، عطر...)" autocomplete="off" />
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="product-filter-bar">
+          <button class="filter-btn active" data-filter="all">كافة المقتنيات (٧٦)</button>
+          <button class="filter-btn" data-filter="perfume">عطور الورد الخاصة</button>
+          <button class="filter-btn" data-filter="oil">دهن وزيت الورد</button>
+          <button class="filter-btn" data-filter="water">ماء الورد والعروس</button>
+          <button class="filter-btn" data-filter="incense">البخور والمعمول</button>
+          <button class="filter-btn" data-filter="gifts">مجموعات الإهداء</button>
+          <button class="filter-btn" data-filter="care">معطرات وعناية</button>
+        </div>
+
+        <!-- Products Grid (Rendered Dynamically via products.js) -->
+        <div class="products-grid"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. TAIF ROSE HERITAGE: MOUNTAINS & TERROIR
+         ====================================================================== -->
+    <section id="heritage">
+      <div class="container">
+        <div class="heritage-story-grid">
+          <!-- Image Frame with Terraced Taif Farms -->
+          <div class="heritage-visual-frame">
+            <img src="/heritage/taif-fields.jpg" alt="مزارع ورد الطائف في الهدا والشفا" loading="lazy" />
+            <div class="floating-heritage-seal">
+              <div class="seal-number">٢٠٠٠م</div>
+              <div class="seal-text">
+                <strong>ارتفاع قمم جبال الطائف</strong><br />
+                مناخ استثنائي يمنح الورد عطره الأسطوري
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Narrative -->
+          <div class="heritage-narrative">
+            <div class="section-eyebrow">أصالة الأرض والجبال</div>
+            <h2 class="section-title">حكايةُ ورد الطائف الأسطوري</h2>
+            <blockquote class="heritage-quote">
+              "ليس كل ورد ورداً.. فوَردُ قِممِ الهدا والشَفا ترويه غيوم السماء وتصقله برودة الفجر، ليكون سلطان الأزهار بلا منازع."
+            </blockquote>
+            <p class="heritage-paragraph">
+              على ارتفاع يتجاوز 2000 متر فوق مستوى سطح البحر في أعالي جبال السروات، تتفتح زهرة الورد الطائفي المعروفة عالمياً باسم <em>Rosa damascena trigintipetala</em> ذات الخمس والثلاثين بتلة، محتضنةً بين ثناياها أندر زيت عطري على وجه البسيطة.
+            </p>
+            <p class="heritage-paragraph">
+              منذ ما يزيد عن قرنين من الزمان، تتوارث دار القاضي تقاليد هذا الحصاد الفجري الدقيق؛ حيث لا يُقطف الورد إلا في الساعات المبكرة قبل شروق الشمس حفاظاً على جزيئات الدهن العطرية قبل أن تبخرها أشعة النهار.
+            </p>
+
+            <div class="heritage-metrics-row">
+              <div class="metric-box">
+                <div class="metric-number">٣٥</div>
+                <div class="metric-label">بتلة في كل وردة طائفية نضرة</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">٠٥:٠٠ ص</div>
+                <div class="metric-label">موعد القِطاف الفجري اليدوي</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-number">١٠٠٪</div>
+                <div class="metric-label">مكونات طبيعية نقية بلا إضافات</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. THE ART OF ARTISANAL COPPER DISTILLATION
+         ====================================================================== -->
+    <section id="distillation">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">الحرفة والتقطير</div>
+          <h2 class="section-title">التقطير النحاسي.. فنّ تحويل الورد إلى ذهب</h2>
+          <p class="section-description">
+            شاهد كيف يتحول عبق آلاف الورود الغضة في معمل التقطير العتيق إلى قطرات دهن صافية تشبه دموع الشمس.
+          </p>
+        </div>
+
+        <div class="distillation-interactive-card">
+          <!-- Step Timeline -->
+          <div class="distillation-steps-timeline">
+            <div class="step-node active" data-step="1">
+              <div class="step-bullet">١</div>
+              <div class="step-content">
+                <h4>الجمع الفجري ووزن البتلات</h4>
+                <p>تصل سلال الورد الندية مباشرة من الحقول إلى المعمل قبل السابعة صباحاً لتفرغ في القدور فوراً.</p>
+              </div>
+            </div>
+
+            <div class="step-node" data-step="2">
+              <div class="step-bullet">٢</div>
+              <div class="step-content">
+                <h4>الغليان البخاري في قدور النحاس (الكرك)</h4>
+                <p>تغمر البتلات بمياه جبلية عذبة داخل قدور نحاسية نقية محكمة الإغلاق بالنحاس والطين المعالج.</p>
+              </div>
+            </div>
+
+            <div class="step-node" data-step="3">
+              <div class="step-bullet">٣</div>
+              <div class="step-content">
+                <h4>التكثيف وفصل ماء العروس عن الدهن</h4>
+                <p>يمر البخار المحمل بالشذا في أنابيب تبريد، ليعطي في الأسفل ماء الورد العروس وفي الأعلى قطرات الدهن الطافية.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Distillation Display -->
+          <div class="distillation-live-display">
+            <img src="/heritage/copper-stills.jpg" alt="التقطير النحاسي التقليدي لورد الطائف" />
+            <div class="distillation-overlay-info">
+              <div class="distillation-caption">
+                <h5>معمل التقطير النحاسي الحرفي</h5>
+                <p>قدور نحاسية حمراء تعود لعقود من التراث العطري الأصيل</p>
+              </div>
+              <span class="card-badge gold">تراث حي</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rarity Banner -->
+        <div class="rarity-banner">
+          <div class="rarity-equation">
+            <div class="equation-part">
+              <div class="equation-value">٤٠,٠٠٠</div>
+              <div class="equation-title">وردة طائفية طازجة منتقاة</div>
+            </div>
+            <div class="equation-equals">=</div>
+            <div class="equation-part">
+              <div class="equation-value">١ تولة</div>
+              <div class="equation-title">دهن ورد طائفي ملكي خالص (11.7غ)</div>
+            </div>
+          </div>
+          <a href="#products" class="btn btn-gold-primary">
+            <span>اقتنِ تولة دهن الورد الملكي</span>
+            <i data-lucide="sparkles" style="width:18px;height:18px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. INTERACTIVE OLFACTORY PYRAMID
+         ====================================================================== -->
+    <section id="olfactory">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">التكوين العطري</div>
+          <h2 class="section-title">الهرمُ العطري ونفحاتُ الإلهام</h2>
+          <p class="section-description">
+            تفاعل مع طبقات العطر الملكي واستكشف النوتات الحسية التي تنبض بالحياة من اللحظة الأولى وحتى استقرار الأثر على بشرتكم.
+          </p>
+        </div>
+
+        <div class="pyramid-container">
+          <!-- Interactive Layer Switches -->
+          <div class="pyramid-visual">
+            <button class="pyramid-layer-btn active" data-layer="top">
+              <div class="layer-tag-group">
+                <span class="layer-badge">النوتة العليا</span>
+                <span class="layer-name">قمة الهرم العطري</span>
+              </div>
+              <span class="layer-time">الثواني الأولى</span>
+            </button>
+
+            <button class="pyramid-layer-btn" data-layer="heart">
+              <div class="layer-tag-group">
+                <span class="layer-badge">قلب العطر</span>
+                <span class="layer-name">نبض الورد الطائفي</span>
+              </div>
+              <span class="layer-time">٢ - ٦ ساعات</span>
+            </button>
+
+            <button class="pyramid-layer-btn" data-layer="base">
+              <div class="layer-tag-group">
+                <span class="layer-badge">القاعدة الثابتة</span>
+                <span class="layer-name">أصالة الملوك والعنبر</span>
+              </div>
+              <span class="layer-time">حتى ٤٨ ساعة</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Layer Details Card -->
+          <div class="pyramid-detail-card">
+            <h3>قمة الهرم: إشراقة الندى الفجرية</h3>
+            <p class="pyramid-detail-desc">
+              نفحات نقية مستوحاة من قطاف الورد عند الفجر الأول قبل شروق شمس جبال الهدا، حيث تمتزج حبات الندى الباردة برائحة البتلات الخضراء الغضة.
+            </p>
+            <div class="ingredient-chips-grid">
+              <div class="ingredient-chip">
+                <div class="chip-icon">🌸</div>
+                <div class="chip-info">
+                  <h5>بتلات الورد الغضة</h5>
+                  <p>نضارة فطرية منعشة</p>
+                </div>
+              </div>
+              <div class="ingredient-chip">
+                <div class="chip-icon">💧</div>
+                <div class="chip-info">
+                  <h5>قطرات ندى الفجر</h5>
+                  <p>انتعاش مائي بلوري</p>
+                </div>
+              </div>
+              <div class="ingredient-chip">
+                <div class="chip-icon">🍃</div>
+                <div class="chip-info">
+                  <h5>أوراق الشجر الجبلية</h5>
+                  <p>لمسة عشبية ندية</p>
+                </div>
+              </div>
+              <div class="ingredient-chip">
+                <div class="chip-icon">☀️</div>
+                <div class="chip-info">
+                  <h5>أثير الصباح النقي</h5>
+                  <p>نفحة جبال الهدا الباردة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. BESPOKE ROYAL GIFT BOX CUSTOMIZER
+         ====================================================================== -->
+    <section id="gift-customizer">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">إهداءٌ يليق بالمقام</div>
+          <h2 class="section-title">خصّص صندوق الإهداء الملكي</h2>
+          <p class="section-description">
+            اختر لون المخمل الفاخر، واكتب بطاقة الإهداء بمداد الذهب، ودعنا نختمها بالشمع الملكي المعتق لتقدم هدية لا تُنسى.
+          </p>
+        </div>
+
+        <div class="customizer-workspace">
+          <!-- Live Preview Box -->
+          <div class="customizer-preview-box">
+            <img src="/products/royal-gift-box.jpg" alt="معاينة صندوق الإهداء المخصص" />
+            <!-- Live Calligraphy Card Overlay -->
+            <div class="live-card-overlay">
+              <div class="live-card-text">
+                <div class="live-card-to">إلى: صاحب السمو والرفعة</div>
+                <div class="live-card-message">"أدام الله عزكم وطيب أوقاتكم بأريج ورد الطائف الملكي"</div>
+              </div>
+              <div class="live-wax-stamp" title="ختم الشمع الملكي">
+                <span>♦</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customizer Controls -->
+          <div class="customizer-controls">
+            <!-- Box Color Choice -->
+            <div class="control-group">
+              <div class="control-group-title">١. لون المخمل الملكي للصندوق</div>
+              <div class="box-color-options">
+                <button class="color-option-btn active" data-color="emerald">
+                  <span class="color-dot dot-emerald"></span>
+                  <span>الزمردي الملكي</span>
+                </button>
+                <button class="color-option-btn" data-color="noir">
+                  <span class="color-dot dot-noir"></span>
+                  <span>الأسود المهيب</span>
+                </button>
+                <button class="color-option-btn" data-color="ivory">
+                  <span class="color-dot dot-ivory"></span>
+                  <span>العاجي الحريري</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Recipient Name -->
+            <div class="control-group">
+              <label for="card-recipient" class="control-group-title">٢. اسم المهدى إليه (يطبع بالخط الذهبي)</label>
+              <input type="text" id="card-recipient" class="customizer-input" placeholder="مثال: سعادة الدكتور خالد بن فهد" />
+            </div>
+
+            <!-- Personalized Message -->
+            <div class="control-group">
+              <label for="card-message" class="control-group-title">٣. نص بطاقة الإهداء المذهبة</label>
+              <textarea id="card-message" rows="3" class="customizer-input" placeholder="اكتب عبارات التقدير والمحبة التي تود نقشها في البطاقة..."></textarea>
+            </div>
+
+            <!-- Add to Bag CTA -->
+            <button class="btn btn-gold-primary btn-add-custom-gift">
+              <i data-lucide="gift" style="width:18px;height:18px;"></i>
+              <span>اعتماد وتغليف الصندوق الملكي (٢,٤٥٠ ر.س)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. FRAGRANCE FINDER CONCIERGE QUIZ
+         ====================================================================== -->
+    <section id="concierge">
+      <div class="container">
+        <div class="concierge-card">
+          <div class="section-eyebrow">مستشار الورد الخاص</div>
+          <h2 class="section-title">ابحث عن نفحتك الملكية في خطوتين</h2>
+          <p class="section-description">
+            أجب عن سؤالين بسيطين ليرشدكم خبير العطور في دار القاضي إلى المقتنى الأنسب لذوقكم الرفيع.
+          </p>
+
+          <div class="quiz-steps-wrapper">
+            <!-- Step 1 -->
+            <div class="quiz-step active" id="quiz-step-1">
+              <h4 class="quiz-question">ما هي المناسبة الأساسية لاقتناء العطر؟</h4>
+              <div class="quiz-options-grid">
+                <button class="quiz-choice-btn" data-step="1" data-val="daily">
+                  <div class="quiz-choice-icon">💧</div>
+                  <strong>عناية وانتعاش يومي راقٍ</strong>
+                  <small style="color:var(--text-dim)">رذاذ لطيف يوقظ الحواس طوال اليوم</small>
+                </button>
+
+                <button class="quiz-choice-btn" data-step="1" data-val="formal">
+                  <div class="quiz-choice-icon">👑</div>
+                  <strong>مناسبات كبرى وحفلات رسمية</strong>
+                  <small style="color:var(--text-dim)">حضور مهيب يترك بصمة لا تنسى</small>
+                </button>
+
+                <button class="quiz-choice-btn" data-step="1" data-val="gift">
+                  <div class="quiz-choice-icon">🎁</div>
+                  <strong>إهداء استثنائي لشخصية رفيعة</strong>
+                  <small style="color:var(--text-dim)">صندوق متكامل يحمل أسمى معاني التقدير</small>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="quiz-step" id="quiz-step-2">
+              <h4 class="quiz-question">ما هو الطابع العطري الذي يستهوي حواسكم؟</h4>
+              <div class="quiz-options-grid">
+                <button class="quiz-choice-btn" data-step="2" data-val="oil">
+                  <div class="quiz-choice-icon">🏺</div>
+                  <strong>دهن ورد خالص معتق بيور</strong>
+                  <small style="color:var(--text-dim)">كثافة عالية وفوحان أرستقراطي تقليدي</small>
+                </button>
+
+                <button class="quiz-choice-btn" data-step="2" data-val="water">
+                  <div class="quiz-choice-icon">🌸</div>
+                  <strong>ماء ورد ندي مائي منعش</strong>
+                  <small style="color:var(--text-dim)">خفة نقية تناسب الوجه والمشروبات الملكية</small>
+                </button>
+
+                <button class="quiz-choice-btn" data-step="2" data-val="perfume">
+                  <div class="quiz-choice-icon">✨</div>
+                  <strong>مزيج شرقي بالعود والعنبر</strong>
+                  <small style="color:var(--text-dim)">إكستري دو بارفان يجمع الشرق بالورد</small>
+                </button>
+              </div>
+            </div>
+
+            <!-- Result Box -->
+            <div class="quiz-result-box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. ROYAL TRUST & CERTIFICATIONS
+         ====================================================================== -->
+    <section id="trust" style="padding: 4rem 0 7rem 0;">
+      <div class="container" style="text-align: center;">
+        <div class="royal-divider">
+          <img src="/brand/logo-gold.png" alt="ختم القاضي" />
+        </div>
+        <h3 style="font-size: 1.5rem; color: var(--gold-light); margin-bottom: 2.5rem; font-family: var(--font-serif)">
+          معايير الجودة الملكية والموثوقية المعتمدة
+        </h3>
+        <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; opacity: 0.85;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-cream);">
+            <i data-lucide="shield-check" style="color: var(--gold-primary); width: 26px; height: 26px;"></i>
+            <span>مطابق للمواصفات والمقاييس السعودية (SASO)</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-cream);">
+            <i data-lucide="check-circle" style="color: var(--gold-primary); width: 26px; height: 26px;"></i>
+            <span>شهادة منشأ ورد الطائف الأصلي 100%</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; color: var(--text-cream);">
+            <i data-lucide="truck" style="color: var(--gold-primary); width: 26px; height: 26px;"></i>
+            <span>توصيل مبرد وسريع لجميع مدن المملكة والخليج</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       11. GRAND LUXURY FOOTER
+       ======================================================================== -->
+  <footer id="grand-footer">
+    <div class="container">
+      <!-- VIP Harvest Club -->
+      <div class="vip-club-card">
+        <div class="section-eyebrow">نادي القِطاف الملكي</div>
+        <h3>انضم إلى قائمة النخبة لموسم الورد القادم</h3>
+        <p>
+          نظراً لمحدودية كميات التقطير الأولى السنوية لدهن الورد الطائفي، يحصل أعضاء نادي النخبة على أولوية الحجز المبكر ودعوات خاصة لحضور موسم التقطير في جبال الهدا.
+        </p>
+        <form class="vip-input-group" onsubmit="event.preventDefault(); alert('أهلاً بكم في نادي النخبة لدار القاضي.');">
+          <input type="email" placeholder="أدخل بريدكم الإلكتروني أو رقم الهاتف..." required />
+          <button type="submit" class="btn btn-gold-primary">
+            <span>طلب الانضمام</span>
+            <i data-lucide="mail"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Footer Grid -->
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-column">
+          <div class="footer-logo-wrap">
+            <img src="/brand/logo-gold.png" alt="دار القاضي" />
+          </div>
+          <div class="brand-title-group" style="margin-bottom: 1rem;">
+            <span class="brand-name">دار القاضـي</span>
+            <span class="brand-subtitle">AL-QADI TAIF ROSE HERITAGE</span>
+          </div>
+          <p class="footer-brand-desc">
+            العلامة السعودية الرائدة في استخلاص وتقطير الورد الطائفي الملكي وصياغة أندر الأدهان والعطور المستوحاة من سحر جبال الحجاز الشامخة.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>المقتنيات</h4>
+          <ul class="footer-links">
+            <li><a href="#products">دهن الورد النخب الأول</a></li>
+            <li><a href="#products">ماء الورد العروس</a></li>
+            <li><a href="#products">عطر سلطان الورد</a></li>
+            <li><a href="#gift-customizer">صناديق الإهداء الفاخرة</a></li>
+            <li><a href="#distillation">حرفة التقطير النحاسي</a></li>
+          </ul>
+        </div>
+
+        <!-- Boutiques Directory -->
+        <div class="footer-column">
+          <h4>بوتيكات الدار</h4>
+          <div class="boutique-item">
+            <strong>الطائف - معمل الهدا</strong>
+            <span>طريق الهدا الدائري، مزارع الورد</span>
+          </div>
+          <div class="boutique-item">
+            <strong>الرياض - سنتريا مول</strong>
+            <span>طريق التحلية، البوتيك الملكي</span>
+          </div>
+          <div class="boutique-item">
+            <strong>جدة - التحلية</strong>
+            <span>مركز التحلية التجاري</span>
+          </div>
+        </div>
+
+        <!-- Contact & Concierge -->
+        <div class="footer-column">
+          <h4>خدمة كبار الضيوف</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; margin-bottom: 1rem;">
+            فريق مستشاري العطور متاح لتلبية الطلبات الخاصة والبروتوكولية:
+          </p>
+          <div style="font-family: var(--font-accent); font-size: 1.25rem; color: var(--gold-light); margin-bottom: 0.5rem; direction: ltr; text-align: right;">
+            +966 12 738 0000
+          </div>
+          <div style="color: var(--text-dim); font-size: 0.85rem;">
+            concierge@alqadi-taifrose.sa
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          جميع الحقوق محفوظة © دار القاضي لورد الطائف ٢٠٢٦. صُنع بفخر في المملكة العربية السعودية.
+        </div>
+        <div class="footer-authenticity-badges">
+          <div class="auth-badge">
+            <span>♦</span>
+            <span>ورد طائفي أصلي 100%</span>
+          </div>
+          <div class="auth-badge">
+            <span>♦</span>
+            <span>سجل تجاري معتمد</span>
+          </div>
+          <div class="auth-badge">
+            <span>♦</span>
+            <span>شحن دولي آمن</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       12. QUICK VIEW MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="quick-view-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="إغلاق النافذة">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+      <div class="modal-gallery"></div>
+      <div class="modal-details">
+        <span class="modal-category"></span>
+        <h2 class="modal-title"></h2>
+        <div class="modal-price-tag"></div>
+        <p class="modal-description"></p>
+        <div class="modal-specs-list"></div>
+        <div class="modal-actions">
+          <div class="qty-picker">
+            <button class="qty-btn minus">-</button>
+            <input type="text" class="qty-input" value="1" readonly />
+            <button class="qty-btn plus">+</button>
+          </div>
+          <button class="btn btn-gold-primary btn-modal-add" style="flex:1;">
+            <i data-lucide="shopping-bag" style="width:18px;height:18px;"></i>
+            <span>إضافة إلى الحقيبة</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       13. SLIDE-OUT LUXURY SHOPPING BAG DRAWER
+       ======================================================================== -->
+  <div class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <i data-lucide="shopping-bag" style="width:24px;height:24px;color:var(--gold-primary)"></i>
+          <span>حقيبة المقتنيات الملكية</span>
+        </div>
+        <button class="cart-close-btn" aria-label="إغلاق الحقيبة">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+
+      <div class="cart-items-list"></div>
+
+      <div class="cart-footer">
+        <label class="gift-wrap-option">
+          <input type="checkbox" id="gift-wrap-check" checked />
+          <span>تغليف إهداء ملكي فاخر مجاني مع ختم الشمع وبطاقة معطرة</span>
+        </label>
+        <div class="cart-subtotal-row">
+          <span class="subtotal-label">المجموع التقديري:</span>
+          <span class="subtotal-amount">٠ <span>ر.س</span></span>
+        </div>
+        <div class="cart-shipping-note">
+          الأسعار شاملة ضريبة القيمة المضافة والشحن الفاخر المجاني المؤمن.
+        </div>
+        <button class="btn btn-gold-primary btn-checkout">
+          <span>إتمام الطلب الملكي</span>
+          <i data-lucide="arrow-left" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Entry Point -->
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

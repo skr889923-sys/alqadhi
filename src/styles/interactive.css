@@ -1,0 +1,394 @@
+/* ==========================================================================
+   Interactive Features: Olfactory Notes, Gift Customizer & Concierge Quiz
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Olfactory Fragrance Pyramid (الهرم العطري)
+   ========================================================================== */
+
+#olfactory {
+  padding: 8rem 0;
+  position: relative;
+  background: radial-gradient(circle at 50% 30%, rgba(12, 45, 30, 0.4) 0%, var(--bg-darkest) 70%);
+}
+
+.pyramid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.pyramid-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.pyramid-layer-btn {
+  width: 100%;
+  background: rgba(8, 36, 23, 0.65);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all var(--transition-med);
+  position: relative;
+  overflow: hidden;
+}
+
+.pyramid-layer-btn:nth-child(1) { width: 70%; }
+.pyramid-layer-btn:nth-child(2) { width: 85%; }
+.pyramid-layer-btn:nth-child(3) { width: 100%; }
+
+.pyramid-layer-btn:hover,
+.pyramid-layer-btn.active {
+  background: var(--gradient-emerald-card);
+  border-color: var(--gold-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+}
+
+.layer-tag-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.layer-badge {
+  font-size: 0.78rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+}
+
+.layer-name {
+  font-size: 1.25rem;
+  color: var(--text-ivory);
+  font-family: var(--font-serif);
+}
+
+.layer-time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Pyramid Details Display Card */
+.pyramid-detail-card {
+  background: var(--gradient-emerald-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.pyramid-detail-card h3 {
+  font-size: 1.85rem;
+  color: var(--gold-light);
+  margin-bottom: 0.75rem;
+}
+
+.pyramid-detail-desc {
+  font-size: 1rem;
+  color: var(--text-cream);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.ingredient-chips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.ingredient-chip {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(3, 18, 11, 0.6);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.chip-icon {
+  font-size: 1.4rem;
+  color: var(--gold-primary);
+}
+
+.chip-info h5 {
+  font-size: 0.95rem;
+  color: var(--text-ivory);
+  margin-bottom: 0.15rem;
+}
+
+.chip-info p {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+/* ==========================================================================
+   2. Bespoke Gift Box Customizer (تخصيص الإهداء الملكي)
+   ========================================================================== */
+
+#gift-customizer {
+  padding: 8rem 0;
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-darkest) 0%, #052417 50%, var(--bg-darkest) 100%);
+}
+
+.customizer-workspace {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  background: var(--gradient-emerald-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem;
+  box-shadow: var(--shadow-lg);
+  margin-top: 3rem;
+}
+
+/* Customizer Preview */
+.customizer-preview-box {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--shadow-md);
+  background: #02120a;
+}
+
+.customizer-preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+
+/* Live Calligraphy Card Overlay on Preview */
+.live-card-overlay {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  left: 2rem;
+  background: #fdfaf5;
+  color: #1a1a1a;
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0d0b8;
+}
+
+.live-card-text {
+  text-align: right;
+  flex: 1;
+}
+
+.live-card-to {
+  font-size: 0.8rem;
+  color: #8c734b;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.live-card-message {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: #2b261f;
+  line-height: 1.3;
+}
+
+.live-wax-stamp {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #d4af37 0%, #8c6721 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.4), 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Customizer Form Controls */
+.customizer-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.control-group-title {
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 0.85rem;
+  font-family: var(--font-serif);
+}
+
+.box-color-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.color-option-btn {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  background: rgba(3, 18, 11, 0.7);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  color: var(--text-cream);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  transition: all var(--transition-fast);
+}
+
+.color-option-btn.active,
+.color-option-btn:hover {
+  border-color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--gold-light);
+}
+
+.color-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.dot-emerald { background: #0b3d27; }
+.dot-noir { background: #141414; }
+.dot-ivory { background: #e8ded1; }
+
+.customizer-input {
+  width: 100%;
+  background: rgba(3, 18, 11, 0.7);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  color: var(--text-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.customizer-input:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+/* ==========================================================================
+   3. Fragrance Finder Concierge Quiz (مستشار العطور)
+   ========================================================================== */
+
+#concierge {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.concierge-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--gradient-emerald-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.quiz-steps-wrapper {
+  margin: 2.5rem 0;
+}
+
+.quiz-step {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.quiz-step.active {
+  display: block;
+}
+
+.quiz-question {
+  font-size: 1.45rem;
+  color: var(--text-ivory);
+  margin-bottom: 2rem;
+  font-family: var(--font-serif);
+}
+
+.quiz-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.quiz-choice-btn {
+  background: rgba(3, 18, 11, 0.6);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--text-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quiz-choice-btn:hover {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-primary);
+  transform: translateY(-3px);
+  color: var(--gold-light);
+}
+
+.quiz-choice-icon {
+  font-size: 1.8rem;
+  color: var(--gold-primary);
+}
+
+.quiz-result-box {
+  display: none;
+  padding: 2.5rem;
+  background: rgba(3, 18, 11, 0.8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gold-border);
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.quiz-result-box.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .pyramid-container,
+  .customizer-workspace {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}
