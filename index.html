@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>دار القاضي | ورد الطائف الملكي والأدهان الفاخرة</title>
-  <meta name="description" content="المتجر الرسمي لدار القاضي لورد الطائف - أفخم أدهان الورد الطائفي النقي، ماء الورد العروس، والعطور الملكية وصناديق الإهداء الفاخرة من قمم جبال الهدا والشفا." />
+  <title>القاضي | ورد الطائف الملكي والأدهان الفاخرة</title>
+  <meta name="description" content="المتجر الرسمي لـ &quot;القاضي&quot; لورد الطائف - أفخم أدهان الورد الطائفي النقي، ماء الورد العروس، والعطور الملكية وصناديق الإهداء الفاخرة من قمم جبال الهدا والشفا." />
   
   <!-- OpenGraph Meta Tags -->
-  <meta property="og:title" content="دار القاضي | عبق الطائف في كل قطرة" />
+  <meta property="og:title" content="القاضي | عبق الطائف في كل قطرة" />
   <meta property="og:description" content="أندر أدهان وعطور الورد الطائفي النقي المقطر يدوياً في قدور النحاس العتيقة على ارتفاع ألفي متر." />
   <meta property="og:image" content="/products/sultan-perfume.jpg" />
   <meta property="og:type" content="website" />
@@ -34,50 +34,6 @@
   <canvas id="ambient-canvas"></canvas>
   <div class="grain-overlay"></div>
 
-  <!-- ========================================================================
-       1. ADVANCED CINEMATIC INTRO EXPERIENCE (دار القاضي)
-       ======================================================================== -->
-  <div id="cinematic-intro" class="cinematic-intro">
-    <!-- Atmospheric Crystal Veil directly over the hero video -->
-    <div class="intro-crystal-veil"></div>
-    
-    <!-- Luxury Gold Stardust & Mist Canvas -->
-    <canvas id="intro-particles-canvas" class="intro-particles-canvas"></canvas>
-    
-    <div class="intro-stage-container">
-      <!-- Master Cutout Logo (Without background) with dynamic specular sheen -->
-      <div class="intro-seal-hero-wrapper">
-        <div class="intro-specular-sweep"></div>
-        <img 
-          src="/brand/logo-cutout.png" 
-          alt="شعار دار القاضي لورد الطائف" 
-          class="intro-seal-img" 
-        />
-      </div>
-
-      <!-- Royal Calligraphic Narrative -->
-      <div class="intro-typography">
-        <div class="intro-royal-eyebrow">دار القـاضـي • عَبـقُ الملـوك</div>
-        <h2 class="intro-royal-heading">وردُ الطـائفِ المَلكـيّ</h2>
-        <div class="intro-royal-divider">
-          <span></span>
-          <i>♦</i>
-          <span></span>
-        </div>
-        <p class="intro-royal-subline">مـن قِمـمِ الهَـدا والشّفـا • حِرفـةٌ تتـوارثهـا الأجيـال</p>
-      </div>
-    </div>
-
-    <!-- Skip Control with Circular Golden Progress Indicator -->
-    <button class="intro-skip-pill" id="intro-skip-btn" title="تخطي المشهد والدخول للموقع">
-      <span>الدخول إلى المعرض</span>
-      <svg class="skip-progress-svg" viewBox="0 0 36 36">
-        <circle class="skip-progress-bg" cx="18" cy="18" r="15.915" />
-        <circle class="skip-progress-bar" cx="18" cy="18" r="15.915" />
-      </svg>
-      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
-    </button>
-  </div>
 
   <!-- ========================================================================
        2. ROYAL NAVIGATION HEADER
@@ -90,7 +46,7 @@
           <img src="/brand/logo-gold.png" alt="شعار القاضي" />
         </div>
         <div class="brand-title-group">
-          <span class="brand-name">دار القاضـي</span>
+          <span class="brand-name">القاضـي</span>
           <span class="brand-subtitle">TAIF ROSE • EST. TAIF</span>
         </div>
       </a>
@@ -131,7 +87,7 @@
 
   <main>
     <!-- ======================================================================
-         3. HERO SECTION WITH CINEMATIC VIDEO BACKGROUND
+         3. HERO SECTION WITH CINEMATIC VIDEO & UNIFIED INTRO
          ====================================================================== -->
     <section id="hero">
       <!-- Looping Taif Rose Video - Main Real Video (0905.mp4) without random images -->
@@ -142,21 +98,49 @@
       </div>
       <div class="hero-video-overlay"></div>
 
+      <!-- Atmospheric Crystal Veil & Gold Stardust (Intro Layer directly over Video) -->
+      <div class="intro-crystal-veil" id="intro-crystal-veil"></div>
+      <canvas id="intro-particles-canvas" class="intro-particles-canvas"></canvas>
+
       <div class="container hero-content">
-        <h1 class="sr-only">دار القاضي لورد الطائف الفاخر - عبق الطائف الملكي</h1>
+        <h1 class="sr-only">القاضي لورد الطائف الفاخر - عبق الطائف الملكي</h1>
         
-        <!-- Central Cutout Logo / اللوقو المفرغ بدون أي خلفية مباشرة فوق الفيديو الأساسي -->
-        <div class="hero-center-seal">
+        <!-- Unified Master Cutout Logo (The ONE AND ONLY logo - seamlessly shared between intro & hero) -->
+        <div class="unified-hero-seal" id="unified-hero-seal">
+          <div class="intro-specular-sweep" id="intro-specular-sweep"></div>
           <img 
             src="/brand/logo-cutout.png" 
-            alt="شعار دار القاضي لورد الطائف" 
-            class="hero-cutout-logo"
+            alt="شعار القاضي لورد الطائف" 
+            class="unified-cutout-logo"
+            id="unified-cutout-logo"
           />
+        </div>
+
+        <!-- Royal Calligraphic Narrative (Gracefully dissolves on intro completion) -->
+        <div class="intro-typography" id="intro-typography">
+          <div class="intro-royal-eyebrow">القـاضـي • عَبـقُ الملـوك</div>
+          <h2 class="intro-royal-heading">وردُ الطـائفِ المَلكـيّ</h2>
+          <div class="intro-royal-divider">
+            <span></span>
+            <i>♦</i>
+            <span></span>
+          </div>
+          <p class="intro-royal-subline">مـن قِمـمِ الهَـدا والشّفـا • حِرفـةٌ تتـوارثهـا الأجيـال</p>
         </div>
       </div>
 
+      <!-- Skip Control with Circular Golden Progress Indicator -->
+      <button class="intro-skip-pill" id="intro-skip-btn" title="تخطي المشهد والدخول للموقع">
+        <span>الدخول إلى المعرض</span>
+        <svg class="skip-progress-svg" viewBox="0 0 36 36">
+          <circle class="skip-progress-bg" cx="18" cy="18" r="15.915" />
+          <circle class="skip-progress-bar" cx="18" cy="18" r="15.915" />
+        </svg>
+        <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
+      </button>
+
       <!-- Scroll Indicator -->
-      <a href="#products" class="hero-scroll-indicator">
+      <a href="#products" class="hero-scroll-indicator" id="hero-scroll-indicator">
         <span>اكتشف الروائع</span>
         <div class="scroll-line"></div>
       </a>
@@ -228,7 +212,7 @@
               على ارتفاع يتجاوز 2000 متر فوق مستوى سطح البحر في أعالي جبال السروات، تتفتح زهرة الورد الطائفي المعروفة عالمياً باسم <em>Rosa damascena trigintipetala</em> ذات الخمس والثلاثين بتلة، محتضنةً بين ثناياها أندر زيت عطري على وجه البسيطة.
             </p>
             <p class="heritage-paragraph">
-              منذ ما يزيد عن قرنين من الزمان، تتوارث دار القاضي تقاليد هذا الحصاد الفجري الدقيق؛ حيث لا يُقطف الورد إلا في الساعات المبكرة قبل شروق الشمس حفاظاً على جزيئات الدهن العطرية قبل أن تبخرها أشعة النهار.
+              منذ ما يزيد عن قرنين من الزمان، تتوارث القاضي تقاليد هذا الحصاد الفجري الدقيق؛ حيث لا يُقطف الورد إلا في الساعات المبكرة قبل شروق الشمس حفاظاً على جزيئات الدهن العطرية قبل أن تبخرها أشعة النهار.
             </p>
 
             <div class="heritage-metrics-row">
@@ -488,7 +472,7 @@
           <div class="section-eyebrow">مستشار الورد الخاص</div>
           <h2 class="section-title">ابحث عن نفحتك الملكية في خطوتين</h2>
           <p class="section-description">
-            أجب عن سؤالين بسيطين ليرشدكم خبير العطور في دار القاضي إلى المقتنى الأنسب لذوقكم الرفيع.
+            أجب عن سؤالين بسيطين ليرشدكم خبير العطور في القاضي إلى المقتنى الأنسب لذوقكم الرفيع.
           </p>
 
           <div class="quiz-steps-wrapper">
@@ -588,7 +572,7 @@
         <p>
           نظراً لمحدودية كميات التقطير الأولى السنوية لدهن الورد الطائفي، يحصل أعضاء نادي النخبة على أولوية الحجز المبكر ودعوات خاصة لحضور موسم التقطير في جبال الهدا.
         </p>
-        <form class="vip-input-group" onsubmit="event.preventDefault(); alert('أهلاً بكم في نادي النخبة لدار القاضي.');">
+        <form class="vip-input-group" onsubmit="event.preventDefault(); alert('أهلاً بكم في نادي النخبة للقاضي.');">
           <input type="email" placeholder="أدخل بريدكم الإلكتروني أو رقم الهاتف..." required />
           <button type="submit" class="btn btn-gold-primary">
             <span>طلب الانضمام</span>
@@ -602,10 +586,10 @@
         <!-- Brand Info -->
         <div class="footer-brand-column">
           <div class="footer-logo-wrap">
-            <img src="/brand/logo-gold.png" alt="دار القاضي" />
+            <img src="/brand/logo-gold.png" alt="القاضي" />
           </div>
           <div class="brand-title-group" style="margin-bottom: 1rem;">
-            <span class="brand-name">دار القاضـي</span>
+            <span class="brand-name">القاضـي</span>
             <span class="brand-subtitle">AL-QADI TAIF ROSE HERITAGE</span>
           </div>
           <p class="footer-brand-desc">
@@ -627,7 +611,7 @@
 
         <!-- Boutiques Directory -->
         <div class="footer-column">
-          <h4>بوتيكات الدار</h4>
+          <h4>بوتيكات القاضي</h4>
           <div class="boutique-item">
             <strong>الطائف - معمل الهدا</strong>
             <span>طريق الهدا الدائري، مزارع الورد</span>
@@ -660,7 +644,7 @@
       <!-- Bottom Bar -->
       <div class="footer-bottom-bar">
         <div>
-          جميع الحقوق محفوظة © دار القاضي لورد الطائف ٢٠٢٦. صُنع بفخر في المملكة العربية السعودية.
+          جميع الحقوق محفوظة © القاضي لورد الطائف ٢٠٢٦. صُنع بفخر في المملكة العربية السعودية.
         </div>
         <div class="footer-authenticity-badges">
           <div class="auth-badge">

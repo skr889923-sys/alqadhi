@@ -1,28 +1,28 @@
 /* ==========================================================================
-   Advanced Cinematic Intro Experience: دار القاضي
+   Advanced Unified Intro & Hero Experience: القاضي
    ========================================================================== */
 
 import gsap from 'gsap';
 
 export function initCinematicIntro() {
-  const introEl = document.getElementById('cinematic-intro');
-  const crystalVeil = document.querySelector('.intro-crystal-veil');
-  const sealWrapper = document.querySelector('.intro-seal-hero-wrapper');
-  const specularSweep = document.querySelector('.intro-specular-sweep');
-  const typography = document.querySelector('.intro-typography');
+  const crystalVeil = document.getElementById('intro-crystal-veil');
+  const particlesCanvas = document.getElementById('intro-particles-canvas');
+  const unifiedSeal = document.getElementById('unified-hero-seal');
+  const specularSweep = document.getElementById('intro-specular-sweep');
+  const introTypography = document.getElementById('intro-typography');
   const skipBtn = document.getElementById('intro-skip-btn');
   const progressBar = document.querySelector('.skip-progress-bar');
+  const scrollIndicator = document.getElementById('hero-scroll-indicator');
   const heroVideo = document.getElementById('hero-video');
-  const particlesCanvas = document.getElementById('intro-particles-canvas');
 
-  if (!introEl || !sealWrapper) return;
+  if (!unifiedSeal) return;
 
-  // Ensure background hero video starts playing smoothly
+  // 1. Ensure background hero video starts playing smoothly
   if (heroVideo) {
     heroVideo.play().catch(() => {});
   }
 
-  // 1. Initialize Gold Stardust Particle Canvas
+  // 2. Initialize Stardust Particles Canvas
   let animFrameId = null;
   let particlesRunning = true;
 
@@ -32,12 +32,13 @@ export function initCinematicIntro() {
     let height = (particlesCanvas.height = window.innerHeight);
 
     const handleResize = () => {
+      if (!particlesCanvas) return;
       width = particlesCanvas.width = window.innerWidth;
       height = particlesCanvas.height = window.innerHeight;
     };
     window.addEventListener('resize', handleResize);
 
-    const particleCount = window.innerWidth < 768 ? 24 : 40;
+    const particleCount = window.innerWidth < 768 ? 22 : 38;
     const particles = Array.from({ length: particleCount }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -78,97 +79,146 @@ export function initCinematicIntro() {
     renderParticles();
   }
 
-  // 2. Master GSAP Cinematic Sequence
-  const INTRO_DURATION = 4.4; // seconds
+  // 3. Master GSAP Cinematic Sequence
+  const INTRO_DURATION = 4.2; // seconds
+  let isIntroFinished = false;
+
   const tl = gsap.timeline({
     defaults: { ease: 'power3.out' },
     onComplete: finishIntro
   });
 
-  // Initial States
-  gsap.set(sealWrapper, { opacity: 0, scale: 0.88, y: 15 });
-  gsap.set(typography, { opacity: 0, y: 25 });
-  gsap.set(skipBtn, { opacity: 0, y: 10 });
-  if (progressBar) {
-    gsap.set(progressBar, { strokeDashoffset: 100 });
-  }
+  // Initial States: Logo starts slightly scaled with subtle authority
+  gsap.set(unifiedSeal, { opacity: 0, scale: 0.9, y: 15 });
+  if (introTypography) gsap.set(introTypography, { opacity: 0, y: 25 });
+  if (skipBtn) gsap.set(skipBtn, { opacity: 0, y: 10 });
+  if (progressBar) gsap.set(progressBar, { strokeDashoffset: 100 });
+  if (scrollIndicator) gsap.set(scrollIndicator, { opacity: 0 });
 
   // Sequence Choreography:
   // Step A: Logo emerges with dignified authority (0.2s)
-  tl.to(sealWrapper, {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    duration: 1.5,
-    ease: 'power2.out'
-  }, 0.3);
-
-  // Step B: Specular Gold Light Sweep across the logo calligraphy (1.1s)
-  if (specularSweep) {
-    tl.to(specularSweep, {
+  tl.to(
+    unifiedSeal,
+    {
       opacity: 1,
-      duration: 0.1
-    }, 1.1);
+      scale: 1,
+      y: 0,
+      duration: 1.4,
+      ease: 'power2.out'
+    },
+    0.2
+  );
+
+  // Step B: Specular Gold Light Sweep across the logo calligraphy (1.0s)
+  if (specularSweep) {
+    tl.to(
+      specularSweep,
+      {
+        opacity: 1,
+        duration: 0.1
+      },
+      1.0
+    );
     tl.fromTo(
       specularSweep.querySelector('::after') || specularSweep,
       { css: { '--sweep-x': '-150%' } },
       { css: { '--sweep-x': '150%' }, duration: 1.6, ease: 'power1.inOut' },
-      1.1
+      1.0
     );
   }
 
-  // Step C: Royal Typography floats in (1.3s)
-  tl.to(typography, {
-    opacity: 1,
-    y: 0,
-    duration: 1.2,
-    ease: 'power2.out'
-  }, 1.3);
-
-  // Step D: Show skip pill with synchronized circular progress
-  tl.to(skipBtn, {
-    opacity: 1,
-    y: 0,
-    duration: 0.8
-  }, 0.8);
-
-  if (progressBar) {
-    tl.to(progressBar, {
-      strokeDashoffset: 0,
-      duration: INTRO_DURATION,
-      ease: 'linear'
-    }, 0.8);
+  // Step C: Royal Typography floats in below the logo (1.2s)
+  if (introTypography) {
+    tl.to(
+      introTypography,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        ease: 'power2.out'
+      },
+      1.2
+    );
   }
 
-  // Step E: Pause to absorb the brand poetry (hold state)
-  tl.to({}, { duration: 1.4 });
+  // Step D: Show skip pill with synchronized circular progress
+  if (skipBtn) {
+    tl.to(
+      skipBtn,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8
+      },
+      0.8
+    );
+  }
 
-  // Step F: Grand Bloom - Dissolve crystal blur veil & fade out typography
-  tl.to(typography, {
-    opacity: 0,
-    y: -15,
-    duration: 0.7,
-    ease: 'power2.in'
-  });
+  if (progressBar) {
+    tl.to(
+      progressBar,
+      {
+        strokeDashoffset: 0,
+        duration: INTRO_DURATION,
+        ease: 'linear'
+      },
+      0.8
+    );
+  }
 
-  tl.to(skipBtn, {
-    opacity: 0,
-    duration: 0.4
-  }, '<');
+  // Step E: Pause to absorb the brand poetry
+  tl.to({}, { duration: 1.2 });
 
-  tl.to(crystalVeil, {
-    backdropFilter: 'blur(0px) brightness(1) saturate(1)',
-    opacity: 0,
-    duration: 1.3,
-    ease: 'power3.inOut'
-  }, '-=0.3');
+  // Step F: Grand Unveiling - Dissolve crystal blur veil & fade out typography
+  if (introTypography) {
+    tl.to(introTypography, {
+      opacity: 0,
+      y: -15,
+      duration: 0.7,
+      ease: 'power2.in'
+    });
+  }
 
-  tl.to(introEl, {
-    opacity: 0,
-    duration: 0.8,
-    ease: 'power2.inOut',
-    onComplete: () => {
-      introEl.classList.add('intro-complete');
+  if (skipBtn) {
+    tl.to(
+      skipBtn,
+      {
+        opacity: 0,
+        duration: 0.4
+      },
+      '<'
+    );
+  }
+
+  if (crystalVeil) {
+    tl.to(
+      crystalVeil,
+      {
+        backdropFilter: 'blur(0px) brightness(1) saturate(1)',
+        opacity: 0,
+        duration: 1.3,
+        ease: 'power3.inOut'
+      },
+      '-=0.3'
+    );
+  }
+
+  if (particlesCanvas) {
+    tl.to(
+      particlesCanvas,
+      {
+        opacity: 0,
+        duration: 0.8
+      },
+      '<'
+    );
+  }
+
+  // The Logo remains permanently in place and activates gentle floating
+  tl.add(() => {
+    unifiedSeal.classList.add('floating');
+    if (scrollIndicator) {
+      scrollIndicator.classList.add('visible');
     }
   }, '-=0.5');
 
@@ -182,29 +232,69 @@ export function initCinematicIntro() {
   }
 
   function finishIntro() {
-    introEl.classList.add('intro-complete');
+    if (isIntroFinished) return;
+    isIntroFinished = true;
+
+    if (introTypography) {
+      introTypography.style.display = 'none';
+    }
+    if (skipBtn) {
+      skipBtn.style.display = 'none';
+    }
+    if (crystalVeil) {
+      crystalVeil.style.display = 'none';
+    }
+    if (particlesCanvas) {
+      particlesCanvas.style.display = 'none';
+    }
     particlesRunning = false;
     if (animFrameId) cancelAnimationFrame(animFrameId);
-    document.body.style.overflow = 'auto';
+
+    // The single logo stays floating as the permanent hero centerpiece
+    unifiedSeal.classList.add('floating');
+    if (scrollIndicator) {
+      scrollIndicator.classList.add('visible');
+    }
 
     if (heroVideo) {
       heroVideo.play().catch(() => {});
     }
   }
 
-  // Expose Replay Function Globally
+  // Expose Replay Function Globally (e.g. from Header sparkles button)
   window.replayCinematicIntro = function () {
-    introEl.classList.remove('intro-complete');
-    introEl.style.opacity = '1';
-    introEl.style.visibility = 'visible';
-    introEl.style.pointerEvents = 'all';
+    isIntroFinished = false;
+    unifiedSeal.classList.remove('floating');
+    if (scrollIndicator) scrollIndicator.classList.remove('visible');
 
     if (crystalVeil) {
+      crystalVeil.style.display = 'block';
       crystalVeil.style.opacity = '1';
-      crystalVeil.style.backdropFilter = 'blur(26px) brightness(0.55) saturate(1.3)';
+      crystalVeil.style.backdropFilter = 'blur(24px) brightness(0.58) saturate(1.25)';
+    }
+    if (particlesCanvas) {
+      particlesCanvas.style.display = 'block';
+      particlesCanvas.style.opacity = '0.75';
+    }
+    if (introTypography) {
+      introTypography.style.display = 'flex';
+      introTypography.style.opacity = '0';
+    }
+    if (skipBtn) {
+      skipBtn.style.display = 'flex';
+      skipBtn.style.opacity = '0';
+    }
+    if (progressBar) {
+      gsap.set(progressBar, { strokeDashoffset: 100 });
     }
 
     particlesRunning = true;
+    if (particlesCanvas) {
+      const ctx = particlesCanvas.getContext('2d');
+      ctx.clearRect(0, 0, particlesCanvas.width, particlesCanvas.height);
+      renderParticles();
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
     tl.restart();
   };

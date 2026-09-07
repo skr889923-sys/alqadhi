@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Product Catalog & Real Products from diwan-alward.com: دار القاضي
+   Product Catalog & Real Products from diwan-alward.com: القاضي
    ========================================================================== */
 
 import { addToCart } from './cart.js';
@@ -13,7 +13,7 @@ export const productsData = [
     "image": "/products/real/p781045737.webp",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ورد-طائفي-القاضي/p781045737",
     "badge": "تاج الفخامة",
     "badgeClass": "gold"
@@ -26,7 +26,7 @@ export const productsData = [
     "image": "/products/real/p965362523.webp",
     "category": "gifts",
     "categoryName": "مجموعات الإهداء",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/مجموعة-عطور-القاضي/p965362523",
     "badge": "إهداء ملكي",
     "badgeClass": "gold"
@@ -39,7 +39,7 @@ export const productsData = [
     "image": "/products/real/p471689423.webp",
     "category": "gifts",
     "categoryName": "مجموعات الإهداء",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/مجموعة-عطر-القاضي-توباكو-ورد-ياسمين-ورد/p471689423",
     "badge": "إصدار فاخر",
     "badgeClass": "gold"
@@ -52,7 +52,7 @@ export const productsData = [
     "image": "/products/real/p1897719084.webp",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عود-ورد-القاضي/p1897719084",
     "badge": "إصدار فاخر",
     "badgeClass": "gold"
@@ -65,7 +65,7 @@ export const productsData = [
     "image": "/products/real/p1150881236.webp",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/هيل-ورد-القاضي/p1150881236",
     "badge": "إصدار فاخر",
     "badgeClass": "gold"
@@ -78,7 +78,7 @@ export const productsData = [
     "image": "/products/real/p319156863.webp",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عنبر-ورد-القاضي/p319156863",
     "badge": "إصدار فاخر",
     "badgeClass": "gold"
@@ -91,7 +91,7 @@ export const productsData = [
     "image": "/products/real/p705634831.webp",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/فانيلا-ورد-القاضي/p705634831",
     "badge": "إصدار فاخر",
     "badgeClass": "gold"
@@ -104,7 +104,7 @@ export const productsData = [
     "image": "/products/real/p179147640.webp",
     "category": "water",
     "categoryName": "ماء الورد والعروس",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/ماء-عروس-الورد-القاضي/p179147640",
     "badge": "ماء العروس النخب الأول",
     "badgeClass": "gold"
@@ -117,7 +117,7 @@ export const productsData = [
     "image": "/products/real/p1576253037.webp",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/زيت-الورد/p1576253037",
     "badge": "ورد طائفي بيور",
     "badgeClass": "gold"
@@ -130,7 +130,7 @@ export const productsData = [
     "image": "/products/real/p516241893.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-الورد-الطائفي/p516241893",
     "badge": "الأكثر طلباً",
     "badgeClass": "gold"
@@ -143,7 +143,7 @@ export const productsData = [
     "image": "/products/real/p1210005577.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معمول-عود-كلاكاسي/p1210005577",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -156,7 +156,7 @@ export const productsData = [
     "image": "/products/real/p1252442049.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-العود-الاسود/p1252442049",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -169,7 +169,7 @@ export const productsData = [
     "image": "/products/real/p853838875.webp",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ديوان-الورد/p853838875",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -182,7 +182,7 @@ export const productsData = [
     "image": "/products/real/p463635230.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-كوبان-توباكو/p463635230",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -195,7 +195,7 @@ export const productsData = [
     "image": "/products/real/p859503796.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-بلو-مون/p859503796",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -208,7 +208,7 @@ export const productsData = [
     "image": "/products/real/p120156002.webp",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-مسك-القاضي/p120156002",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -221,7 +221,7 @@ export const productsData = [
     "image": "/products/real/p650314048.webp",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-ورد-القاضي/p650314048",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -234,7 +234,7 @@ export const productsData = [
     "image": "/products/real/p1120693133.webp",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-زهور-القاضي/p1120693133",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -247,7 +247,7 @@ export const productsData = [
     "image": "/products/real/p185109425.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/البخور-الذكي-ورد-طائفي/p185109425",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -260,7 +260,7 @@ export const productsData = [
     "image": "/products/real/p1251142704.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/البخور-الذكي-امبريال-سافرون/p1251142704",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -273,7 +273,7 @@ export const productsData = [
     "image": "/products/real/p2030889586.jpg",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/البخور-الذكي-دهن-عود-مروكي/p2030889586",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -286,7 +286,7 @@ export const productsData = [
     "image": "/products/real/p1085764281.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/البخور-الذكي-مسك-ملكي/p1085764281",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -299,7 +299,7 @@ export const productsData = [
     "image": "/products/real/p562510012.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ماي-استون/p562510012",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -312,7 +312,7 @@ export const productsData = [
     "image": "/products/real/p1624407280.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-عود-اميري/p1624407280",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -325,7 +325,7 @@ export const productsData = [
     "image": "/products/real/p464874273.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-تركواز-استون/p464874273",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -338,7 +338,7 @@ export const productsData = [
     "image": "/products/real/p1137136138.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-توباكو-ورد/p1137136138",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -351,7 +351,7 @@ export const productsData = [
     "image": "/products/real/p1916992624.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ريد-توباكو/p1916992624",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -364,7 +364,7 @@ export const productsData = [
     "image": "/products/real/p1296862789.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-رويال-مسك/p1296862789",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -377,7 +377,7 @@ export const productsData = [
     "image": "/products/real/p1129001035.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-تراب-الذهب/p1129001035",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -390,7 +390,7 @@ export const productsData = [
     "image": "/products/real/p877833127.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-رويال-ايريش/p877833127",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -403,7 +403,7 @@ export const productsData = [
     "image": "/products/real/p1690625939.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-جزيرة-العود/p1690625939",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -416,7 +416,7 @@ export const productsData = [
     "image": "/products/real/p2080716014.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ماربيت-مان/p2080716014",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -429,7 +429,7 @@ export const productsData = [
     "image": "/products/real/p856281083.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-بلاك-كريستال/p856281083",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -442,7 +442,7 @@ export const productsData = [
     "image": "/products/real/p1927957637.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-فيزون-روز-جولد/p1927957637",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -455,7 +455,7 @@ export const productsData = [
     "image": "/products/real/p1006940299.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ليجند-اسود-او-دى/p1006940299",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -468,7 +468,7 @@ export const productsData = [
     "image": "/products/real/p298648280.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-ليجند-ابيض-او-دى/p298648280",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -481,7 +481,7 @@ export const productsData = [
     "image": "/products/real/p946241721.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-كلوب-دي-نويت/p946241721",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -494,7 +494,7 @@ export const productsData = [
     "image": "/products/real/p197017545.png",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-رمان-توت-احمر/p197017545",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -507,7 +507,7 @@ export const productsData = [
     "image": "/products/real/p736500405.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-بليونير/p736500405",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -520,7 +520,7 @@ export const productsData = [
     "image": "/products/real/p1474782706.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-اليزا/p1474782706",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -533,7 +533,7 @@ export const productsData = [
     "image": "/products/real/p1134164206.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-بلاك-افنتس/p1134164206",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -546,7 +546,7 @@ export const productsData = [
     "image": "/products/real/p2060186650.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عطر-الهيل/p2060186650",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -559,7 +559,7 @@ export const productsData = [
     "image": "/products/real/p1377499332.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-فواح-ورد-الطائفي/p1377499332",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -572,7 +572,7 @@ export const productsData = [
     "image": "/products/real/p1526757205.jpg",
     "category": "oil",
     "categoryName": "دهن وزيت الورد",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-فواح-بدهن-العود-والورد-الطائفي/p1526757205",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -585,7 +585,7 @@ export const productsData = [
     "image": "/products/real/p1092982316.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جسم-فواكه-فرنسيه/p1092982316",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -598,7 +598,7 @@ export const productsData = [
     "image": "/products/real/p334437366.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جسم-احساس/p334437366",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -611,7 +611,7 @@ export const productsData = [
     "image": "/products/real/p1954347575.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جسم-ورد-ومسك/p1954347575",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -624,7 +624,7 @@ export const productsData = [
     "image": "/products/real/p1224857968.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جسم-كفاني/p1224857968",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -637,7 +637,7 @@ export const productsData = [
     "image": "/products/real/p1540191770.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معمول-عود-كلمنتان/p1540191770",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -650,7 +650,7 @@ export const productsData = [
     "image": "/products/real/p815388154.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-عود-الشرقيه/p815388154",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -663,7 +663,7 @@ export const productsData = [
     "image": "/products/real/p1136261645.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-عود-السلمان/p1136261645",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -676,7 +676,7 @@ export const productsData = [
     "image": "/products/real/p2137625371.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-عود-نيش/p2137625371",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -689,7 +689,7 @@ export const productsData = [
     "image": "/products/real/p346996938.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-شغف/p346996938",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -702,7 +702,7 @@ export const productsData = [
     "image": "/products/real/p1472723744.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-قصر-العود/p1472723744",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -715,7 +715,7 @@ export const productsData = [
     "image": "/products/real/p317638028.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-شيخ-العود/p317638028",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -728,7 +728,7 @@ export const productsData = [
     "image": "/products/real/p1762897396.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-سيد-العود/p1762897396",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -741,7 +741,7 @@ export const productsData = [
     "image": "/products/real/p1337514535.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/بخور-سلطان-العود/p1337514535",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -754,7 +754,7 @@ export const productsData = [
     "image": "/products/real/p207987801.jpg",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/عود-اسود-عطر-الجسم-والشعر/p207987801",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -767,7 +767,7 @@ export const productsData = [
     "image": "/products/real/p1105575797.webp",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/كولونيا-ورد-القاضي/p1105575797",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -780,7 +780,7 @@ export const productsData = [
     "image": "/products/real/p1403347711.webp",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/فازلين-الورد/p1403347711",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -793,7 +793,7 @@ export const productsData = [
     "image": "/products/real/p1527218814.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-مسك-وردي/p1527218814",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -806,7 +806,7 @@ export const productsData = [
     "image": "/products/real/p1593239122.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-تركواز-استون/p1593239122",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -819,7 +819,7 @@ export const productsData = [
     "image": "/products/real/p183344923.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معمول-عود-مروكي/p183344923",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -832,7 +832,7 @@ export const productsData = [
     "image": "/products/real/p1830945647.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معمول-عود-ماليزي/p1830945647",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -845,7 +845,7 @@ export const productsData = [
     "image": "/products/real/p1339612230.jpg",
     "category": "incense",
     "categoryName": "البخور والمعمول",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معمول-عود-سيوفي/p1339612230",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -858,7 +858,7 @@ export const productsData = [
     "image": "/products/real/p1976661181.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-عود-لاوسي/p1976661181",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -871,7 +871,7 @@ export const productsData = [
     "image": "/products/real/p917361198.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-الورد-الطائفي/p917361198",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -884,7 +884,7 @@ export const productsData = [
     "image": "/products/real/p1926508956.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-عود-اميري/p1926508956",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -897,7 +897,7 @@ export const productsData = [
     "image": "/products/real/p276202944.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-رويال-عود/p276202944",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -910,7 +910,7 @@ export const productsData = [
     "image": "/products/real/p1467551965.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-توباكو-ورد/p1467551965",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -923,7 +923,7 @@ export const productsData = [
     "image": "/products/real/p1607558432.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-مسك-بودر/p1607558432",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -936,7 +936,7 @@ export const productsData = [
     "image": "/products/real/p1655357708.jpg",
     "category": "care",
     "categoryName": "معطرات وعناية",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/معطر-جو-ومفارش-رد-روج/p1655357708",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -949,7 +949,7 @@ export const productsData = [
     "image": "/products/real/p412707630.webp",
     "category": "water",
     "categoryName": "ماء الورد والعروس",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/ماء-الورد-الطائفي-القاضي/p412707630",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -962,7 +962,7 @@ export const productsData = [
     "image": "/products/real/p1249566442.webp",
     "category": "perfume",
     "categoryName": "العطور الخاصة",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/ورد-طائفي-مجفف/p1249566442",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -975,7 +975,7 @@ export const productsData = [
     "image": "/products/real/p1953624032.webp",
     "category": "water",
     "categoryName": "ماء الورد والعروس",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/ماء-الزهر-القاضي/p1953624032",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -988,7 +988,7 @@ export const productsData = [
     "image": "/products/real/p1643159751.webp",
     "category": "water",
     "categoryName": "ماء الورد والعروس",
-    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدار القاضي.",
+    "notes": "منتج أصيل من منتجات ورد الطائف الفاخرة لدى القاضي.",
     "url": "https://diwan-alward.com/ماء-الكادي-القاضي/p1643159751",
     "badge": "أصلي 100%",
     "badgeClass": ""
@@ -1125,7 +1125,7 @@ export function initProducts() {
       ${p.price.toLocaleString('ar-SA')} <span>ر.س</span>
     `;
     modalBackdrop.querySelector('.modal-description').textContent = 
-      'منتج أصيل موثق من مزارع ومعامل دار القاضي لورد الطائف (ديوان الورد)، مستخلص من خيرات جبال الهدا والشفا ومقطر بنقاء عالي.';
+      'منتج أصيل موثق من مزارع ومعامل القاضي لورد الطائف (ديوان الورد)، مستخلص من خيرات جبال الهدا والشفا ومقطر بنقاء عالي.';
 
     const specs = {
       'اسم المنتج': p.title,

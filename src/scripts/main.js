@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Main Application Entry Point: دار القاضي
+   Main Application Entry Point: القاضي
    ========================================================================== */
 
 import { createIcons, icons } from 'lucide';

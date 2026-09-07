@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Fragrance Concierge Quiz & Olfactory Pyramid: دار القاضي
+   Fragrance Concierge Quiz & Olfactory Pyramid: القاضي
    ========================================================================== */
 
 import { addToCart } from './cart.js';

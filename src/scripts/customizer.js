@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Bespoke Royal Gift Box Customizer: دار القاضي
+   Bespoke Royal Gift Box Customizer: القاضي
    ========================================================================== */
 
 import { addToCart } from './cart.js';

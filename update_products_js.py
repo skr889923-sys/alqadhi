@@ -37,7 +37,7 @@ for p in products:
         p['badgeClass'] = ''
 
 header_code = """/* ==========================================================================
-   Product Catalog & Real Products from diwan-alward.com: دار القاضي
+   Product Catalog & Real Products from diwan-alward.com: القاضي
    ========================================================================== */
 
 import { addToCart } from './cart.js';
@@ -176,7 +176,7 @@ export function initProducts() {
       ${p.price.toLocaleString('ar-SA')} <span>ر.س</span>
     `;
     modalBackdrop.querySelector('.modal-description').textContent = 
-      'منتج أصيل موثق من مزارع ومعامل دار القاضي لورد الطائف (ديوان الورد)، مستخلص من خيرات جبال الهدا والشفا ومقطر بنقاء عالي.';
+      'منتج أصيل موثق من مزارع ومعامل القاضي لورد الطائف (ديوان الورد)، مستخلص من خيرات جبال الهدا والشفا ومقطر بنقاء عالي.';
 
     const specs = {
       'اسم المنتج': p.title,
