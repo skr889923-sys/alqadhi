@@ -35,6 +35,51 @@
   <div class="grain-overlay"></div>
 
   <!-- ========================================================================
+       1. ADVANCED CINEMATIC INTRO EXPERIENCE (دار القاضي)
+       ======================================================================== -->
+  <div id="cinematic-intro" class="cinematic-intro">
+    <!-- Atmospheric Crystal Veil directly over the hero video -->
+    <div class="intro-crystal-veil"></div>
+    
+    <!-- Luxury Gold Stardust & Mist Canvas -->
+    <canvas id="intro-particles-canvas" class="intro-particles-canvas"></canvas>
+    
+    <div class="intro-stage-container">
+      <!-- Master Cutout Logo (Without background) with dynamic specular sheen -->
+      <div class="intro-seal-hero-wrapper">
+        <div class="intro-specular-sweep"></div>
+        <img 
+          src="/brand/logo-cutout.png" 
+          alt="شعار دار القاضي لورد الطائف" 
+          class="intro-seal-img" 
+        />
+      </div>
+
+      <!-- Royal Calligraphic Narrative -->
+      <div class="intro-typography">
+        <div class="intro-royal-eyebrow">دار القـاضـي • عَبـقُ الملـوك</div>
+        <h2 class="intro-royal-heading">وردُ الطـائفِ المَلكـيّ</h2>
+        <div class="intro-royal-divider">
+          <span></span>
+          <i>♦</i>
+          <span></span>
+        </div>
+        <p class="intro-royal-subline">مـن قِمـمِ الهَـدا والشّفـا • حِرفـةٌ تتـوارثهـا الأجيـال</p>
+      </div>
+    </div>
+
+    <!-- Skip Control with Circular Golden Progress Indicator -->
+    <button class="intro-skip-pill" id="intro-skip-btn" title="تخطي المشهد والدخول للموقع">
+      <span>الدخول إلى المعرض</span>
+      <svg class="skip-progress-svg" viewBox="0 0 36 36">
+        <circle class="skip-progress-bg" cx="18" cy="18" r="15.915" />
+        <circle class="skip-progress-bar" cx="18" cy="18" r="15.915" />
+      </svg>
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+
+  <!-- ========================================================================
        2. ROYAL NAVIGATION HEADER
        ======================================================================== -->
   <header id="royal-header">
