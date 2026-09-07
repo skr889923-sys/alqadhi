@@ -35,39 +35,6 @@
   <div class="grain-overlay"></div>
 
   <!-- ========================================================================
-       1. CINEMATIC MASKED LOGO INTRO EXPERIENCE
-       ======================================================================== -->
-  <div id="cinematic-intro">
-    <div class="intro-backdrop"></div>
-    <div class="intro-gold-aura"></div>
-
-    <!-- Video Portal: Video shows inside the hollow emblem then expands to full screen -->
-    <div class="intro-video-portal">
-      <video id="intro-portal-video" autoplay muted loop playsinline poster="/heritage/hero-dewy-roses.jpg">
-        <source src="/videos/taif-rose-hero.mp4" type="video/mp4" />
-        <source src="/videos/0905.mp4" type="video/mp4" />
-      </video>
-    </div>
-
-    <!-- The exact uploaded logo brand mark, acting as the hollow glowing silhouette -->
-    <div class="intro-logo-seal">
-      <img src="/brand/logo-gold.png" alt="شعار دار القاضي لورد الطائف" />
-    </div>
-
-    <!-- Narrative caption -->
-    <div class="intro-narrative">
-      <div class="intro-narrative-badge">دار القـاضـي لـورد الطائـف</div>
-      <div class="intro-narrative-sub">عَبـقُ الملـوكِ والأصـالةِ منـذُ عُقـود • مـن قِمـمِ الهـدا والشَفـا</div>
-    </div>
-
-    <!-- Skip Intro Button -->
-    <button class="intro-skip-btn" id="skip-intro-btn">
-      <span>تخطي المشهد</span>
-      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i>
-    </button>
-  </div>
-
-  <!-- ========================================================================
        2. ROYAL NAVIGATION HEADER
        ======================================================================== -->
   <header id="royal-header">
@@ -122,22 +89,19 @@
          3. HERO SECTION WITH CINEMATIC VIDEO BACKGROUND
          ====================================================================== -->
     <section id="hero">
-      <!-- Looping Taif Rose Video -->
+      <!-- Looping Taif Rose Video - Main Real Video (0905.mp4) without random images -->
       <div class="hero-video-wrap">
-        <video id="hero-video" autoplay muted loop playsinline poster="/heritage/hero-dewy-roses.jpg">
-          <source src="/videos/taif-rose-hero.mp4" type="video/mp4" />
+        <video id="hero-video" autoplay muted loop playsinline poster="/videos/hero_video_poster.jpg">
           <source src="/videos/0905.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="hero-video-overlay"></div>
-      <div class="hero-radial-glow"></div>
 
       <div class="container hero-content">
         <h1 class="sr-only">دار القاضي لورد الطائف الفاخر - عبق الطائف الملكي</h1>
         
-        <!-- Central Cutout Logo / اللوقو المفرغ في المنتصف -->
-        <div class="hero-center-seal hero-animate-in">
-          <div class="hero-seal-glow"></div>
+        <!-- Central Cutout Logo / اللوقو المفرغ بدون أي خلفية مباشرة فوق الفيديو الأساسي -->
+        <div class="hero-center-seal">
           <img 
             src="/brand/logo-cutout.png" 
             alt="شعار دار القاضي لورد الطائف" 
