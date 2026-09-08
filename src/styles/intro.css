@@ -132,7 +132,7 @@
 /* 4. Royal Calligraphic Typography (Positioned absolutely so Logo NEVER shifts) */
 .intro-typography {
   position: absolute;
-  top: calc(50% + min(195px, 41vw) + 1.25rem);
+  top: calc(50% + min(225px, 44vw) + 1.25rem);
   left: 50%;
   transform: translateX(-50%);
   width: min(90vw, 760px);

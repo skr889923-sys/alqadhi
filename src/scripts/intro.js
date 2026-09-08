@@ -1,6 +1,7 @@
 /* ==========================================================================
    Advanced Unified Intro & Hero Experience: القاضي
    The Logo is ONE AND THE SAME: Permanent, unmoving, never disappearing.
+   In intro: Grand large scale. Upon hero entry: Smoothly scales down to normal size.
    ========================================================================== */
 
 import gsap from 'gsap';
@@ -18,6 +19,9 @@ export function initCinematicIntro() {
   const heroVideo = document.getElementById('hero-video');
 
   if (!unifiedSeal) return;
+
+  // Compute responsive grand intro scale
+  const getGrandIntroScale = () => (window.innerWidth < 768 ? 1.34 : 1.44);
 
   // 1. Ensure background hero video starts playing smoothly
   if (heroVideo) {
@@ -83,7 +87,8 @@ export function initCinematicIntro() {
 
   // 3. Master GSAP Cinematic Sequence
   // CRITICAL REQUIREMENT: THE LOGO NEVER DISAPPEARS, BLINKS, OR SHIFTS.
-  // It is 100% visible from line 1 of page load and permanently centered.
+  // It is 100% visible from line 1 of page load, starts large in intro,
+  // and smoothly scales down to normal size upon hero entry.
   const INTRO_DURATION = 4.2; // seconds
   let isIntroFinished = false;
 
@@ -93,14 +98,19 @@ export function initCinematicIntro() {
   });
 
   // Initial States:
-  // LOGO: Stays 100% visible, fully solid, zero coordinate changes
+  // LOGO: Starts at majestic grand scale (1.44 desktop / 1.34 mobile)
+  gsap.set(unifiedSeal, {
+    scale: getGrandIntroScale(),
+    transformOrigin: 'center center',
+    force3D: true
+  });
   if (introTypography) gsap.set(introTypography, { opacity: 0, y: 15 });
   if (skipBtn) gsap.set(skipBtn, { opacity: 0, y: 10 });
   if (progressBar) gsap.set(progressBar, { strokeDashoffset: 100 });
   if (scrollIndicator) gsap.set(scrollIndicator, { opacity: 0 });
 
   // Sequence Choreography:
-  // Step A: Specular Gold Light Sweep across the logo calligraphy (0.3s)
+  // Step A: Specular Gold Light Sweep across the grand logo calligraphy (0.3s)
   if (specularSweep) {
     tl.fromTo(
       specularSweep.querySelector('::after') || specularSweep,
@@ -149,16 +159,16 @@ export function initCinematicIntro() {
     );
   }
 
-  // Step D: Golden pause to absorb the prestige and calligraphy (hold state)
-  tl.to({}, { duration: 1.5 });
+  // Step D: Golden pause to absorb the prestige and grand logo
+  tl.to({}, { duration: 1.4 });
 
-  // Step E: Grand Unveiling - The velvet/crystal blur veil dissolves, revealing the sharp video
-  // The typography dissolves upwards gracefully
+  // Step E: Grand Unveiling & Scale-Down
+  // 1. Typography dissolves upwards gracefully
   if (introTypography) {
     tl.to(introTypography, {
       opacity: 0,
       y: -15,
-      duration: 0.8,
+      duration: 0.7,
       ease: 'power2.inOut'
     });
   }
@@ -174,16 +184,29 @@ export function initCinematicIntro() {
     );
   }
 
+  // 2. THE GRAND LOGO SCALES DOWN SMOOTHLY TO ITS HERO SIZE
+  tl.to(
+    unifiedSeal,
+    {
+      scale: 1.0,
+      duration: 1.6,
+      ease: 'power2.inOut',
+      force3D: true
+    },
+    '-=0.4'
+  );
+
+  // 3. Simultaneously, crystal blur veil smoothly dissolves revealing clear video
   if (crystalVeil) {
     tl.to(
       crystalVeil,
       {
         backdropFilter: 'blur(0px) brightness(1) saturate(1)',
         opacity: 0,
-        duration: 1.4,
+        duration: 1.5,
         ease: 'power3.inOut'
       },
-      '-=0.4'
+      '<'
     );
   }
 
@@ -198,7 +221,7 @@ export function initCinematicIntro() {
     );
   }
 
-  // Header & Scroll prompt fade into view smoothly
+  // Header & Scroll prompt fade into view as logo docks to normal size
   tl.add(() => {
     if (royalHeader) {
       royalHeader.classList.add('header-visible');
@@ -237,8 +260,16 @@ export function initCinematicIntro() {
     particlesRunning = false;
     if (animFrameId) cancelAnimationFrame(animFrameId);
 
-    // The single logo stays floating as the permanent hero centerpiece
-    unifiedSeal.classList.add('floating');
+    // Ensure logo smoothly rests at 1.0 scale and starts floating
+    gsap.to(unifiedSeal, {
+      scale: 1.0,
+      duration: 0.8,
+      ease: 'power2.out',
+      onComplete: () => {
+        unifiedSeal.classList.add('floating');
+      }
+    });
+
     if (royalHeader) {
       royalHeader.classList.add('header-visible');
     }
@@ -257,6 +288,9 @@ export function initCinematicIntro() {
     unifiedSeal.classList.remove('floating');
     if (royalHeader) royalHeader.classList.remove('header-visible');
     if (scrollIndicator) scrollIndicator.classList.remove('visible');
+
+    // Scale back up to grand size for intro replay
+    gsap.set(unifiedSeal, { scale: getGrandIntroScale(), transformOrigin: 'center center' });
 
     if (crystalVeil) {
       crystalVeil.style.display = 'block';

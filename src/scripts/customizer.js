@@ -42,7 +42,7 @@ export function initGiftCustomizer() {
 
   if (messageInput && liveMsgText) {
     messageInput.addEventListener('input', (e) => {
-      liveMsgText.textContent = e.target.value.trim() ? `"${e.target.value}"` : '"أدام الله عزكم وطيب أوقاتكم بأريج ورد الطائف الملكي"';
+      liveMsgText.textContent = e.target.value.trim() ? `"${e.target.value}"` : '"أدام الله عزكم وطيب أوقاتكم بأريج الورد الطائفي"';
     });
   }
 
